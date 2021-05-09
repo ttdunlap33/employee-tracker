@@ -19,7 +19,7 @@
 
   ## Installation
   
-  npm i mysql sequelize express
+  npm i mysql sequelize express console.table
   
   ## Usage
   
