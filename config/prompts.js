@@ -73,7 +73,7 @@ module.exports = {
 		}
 	],
 	
-    addEmployee: (departmentArray, roleArray, managerArray) => [
+    addEmployee: (roleArray, managerArray) => [
 		// Employee's First Name
 		{
 			name: "firstName",
@@ -85,13 +85,6 @@ module.exports = {
 			name: "lastName",
 			type: "input",
 			message: "Please enter employee's last name:",
-		},
-		// Select Employee's Department
-		{
-			name: "department",
-			type: "list",
-			message: "Please select employee's department",
-			choices: departmentArray,
 		},
 		// Employee's Role
 		{
@@ -111,7 +104,7 @@ module.exports = {
 
     updateRole: (employees, job) => [
         {
-            name: 'Update',
+            name: 'update',
             type: 'list',
             message: "Which employee's role is to be updated?",
             choices: employees, 
@@ -135,7 +128,7 @@ module.exports = {
             name: 'manager',
             type: 'list',
             message: "Please select employee's new manager",
-            choices: employes
+            choices: employees
         }
     ],
 
